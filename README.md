@@ -1,1 +1,1 @@
-# simple-js-scripts
+# simple-gallary
