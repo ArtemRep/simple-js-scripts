@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+          .slider {
+            max-width: 500px;
+            
+          }
+
+        .slider__img {
+            height: 100px;
+            cursor: pointer;
+        }
+
+        .show-full-img {
+            width: 500px;
+            height: 500px;
+            background-color: antiquewhite;
+        }
+
+        .show-full-img img {
+            width: 100%;
+        }
+
+        .container{
+            width: fit-content;
+            padding: 20px;
+            background-color: lightcoral;
+        }
+        .controls{
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+            display: flow-root;
+        }
+
+        a[href="#prev"]{
+            float: left;
+        }
+          a[href="#next"]{
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    
+    
+    <div class="show-full-img">
+        <div class="controls">
+            <a href="#prev">Назад</a>
+            <a href="#next">Вперёд</a>
+        </div>
+    </div>
+    <div class="slider">
+        <!-- <img class="slider__img" data-big="img/big/img2-b.jpg" src="img/small/img2-s.jpg" alt=""> -->
+        <img class="slider__img" src="img/small/img1-s.jpg" alt="">
+        <img class="slider__img" src="img/small/img2-s.jpg" alt="">
+        <img class="slider__img" src="img/small/img3-s.jpg" alt="">
+        <img class="slider__img" src="img/small/img4-s.jpg" alt="">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
